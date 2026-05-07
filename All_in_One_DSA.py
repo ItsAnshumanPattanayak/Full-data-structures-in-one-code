@@ -54,11 +54,6 @@ while True:
     print ("\nInvalid action\n")
 target = int(input("\nEnter your target value: ")) 
 
-# #creating the calling object for class 
-# my_searcher = Data_structure()
-# result = my_searcher.linear_search(lst,target) #calling the function 
-# print(f"Your target value is in index {result}")
-
 # Choosing operations 
 while True:
 
