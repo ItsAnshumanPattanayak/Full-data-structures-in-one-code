@@ -1,4 +1,5 @@
 class Data_structure:
+  
   #Linear Search
   def linear_search(self,arr,target):
     size = len(arr)
@@ -6,6 +7,28 @@ class Data_structure:
       if (arr[index] == target):
         return index
     return False
+  
+  # Binary Search
+  def binary_search (self, arr , target):
+    size = len(arr)
+    start = 0
+    end = size-1
+
+    while (start <= end):
+      mid = (start + end) // 2
+
+      if (arr[mid] == target):
+        return mid
+      
+      elif (arr[mid] < target):
+        start = mid+1
+
+      elif (arr[mid] > target):
+        end = mid -1
+
+    return False
+
+
 
 #User_defined
 lst= []
